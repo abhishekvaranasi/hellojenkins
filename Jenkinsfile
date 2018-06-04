@@ -1,9 +1,10 @@
 pipeline {
-  agents {
-      stage("build") {
-        steps {
-          sh "python hello_jenkis.py"
-              }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'python hello_jenkins.py'
             }
-         }
         }
+    }
+}
