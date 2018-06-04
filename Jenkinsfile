@@ -5,15 +5,16 @@ pipeline {
             steps {
                 bat 'python hello_jenkins.py'
             }
+        }
         stage('Test') {
             steps {
                 echo 'This is testing stage'
             }
+        }
         stage('Deploy') {
             steps {
                 bat 'Deployment stage completed!'
             }        
         }
     }
-}
 }
