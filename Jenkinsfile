@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'Deployment stage completed!'
+                echo 'Deployment stage completed!'
             }        
         }
     }
